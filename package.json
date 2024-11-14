@@ -3,14 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://nydusborn.github.io/design-vanilla/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "typescript": "*",
     "vite": "*",
-    "sass-embedded": "*"
+    "sass-embedded": "*",
+    "gh-pages": "*"
   }
 }
