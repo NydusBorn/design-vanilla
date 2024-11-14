@@ -1,0 +1,92 @@
+//colors
+$cl-black: #1B1F2B;
+$cl-white: #FFFFFF;
+$cl-orange-2: #EFA501;
+$cl-orange-1: #F8E6BE;
+$cl-green-4: #286562;
+$cl-green-3: #3B7E7B;
+$cl-green-2: #627F7E;
+$cl-green-1: #E0F0E5;
+$cl-gray-3: #A6A6A6;
+$cl-gray-2: #D9DFDB;
+$cl-gray-1: #F1F3F2;
+$cl-beige-2: #F4F0E9;
+$cl-beige-1: #F9F7F4;
+
+//fonts
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap';
+$ff-roboto: "Roboto", Serif;
+h1, h2, h3, .p, .p-big, .p-small {
+  font-family: $ff-roboto;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 38.08px;
+  @media only screen and (min-width: 1024px) {
+    font-size: 96px;
+    line-height: 104.64px;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 38.08px;
+  @media only screen and (min-width: 1024px) {
+
+    font-size: 59px;
+    line-height: 73.16px;
+  }
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 27.6px;
+  @media only screen and (min-width: 1024px) {
+    font-size: 35px;
+    line-height: 42.7px;
+  }
+}
+
+.p-med {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.72px;
+  @media only screen and (min-width: 1024px) {
+    font-size: 20px;
+    line-height: 28.4px;
+  }
+}
+
+.p-big {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22.72px;
+  @media only screen and (min-width: 1024px) {
+    font-size: 23px;
+    line-height: 28.06px;
+  }
+}
+
+.p-sm {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.72px;
+  @media only screen and (min-width: 1024px) {
+    font-size: 17px;
+    line-height: 24.14px;
+  }
+}
+
+body{
+  margin: 0;
+}
+:root{
+  width: 100vw;
+  height: 500vh;
+  background: linear-gradient(45deg, $cl-green-4 0%, $cl-green-3 100%);
+}

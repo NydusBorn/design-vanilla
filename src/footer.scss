@@ -1,0 +1,11 @@
+@import "style";
+
+footer{
+    width: 100vw;
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: $cl-beige-2;
+}
