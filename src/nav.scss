@@ -1,7 +1,7 @@
 @import "style";
 
 nav{
-  width: 100vw;
+  width: 100%;
   height: 88px;
   display: flex;
   flex-direction: row;
@@ -40,10 +40,10 @@ nav{
   color: $cl-white;
 }
 nav-link{
-  cursor: pointer;
   color: $cl-white;
 }
 nav-link:hover{
+  cursor: pointer;
   text-decoration: underline;
   text-underline-color: $cl-white;
   text-underline-style: single;
