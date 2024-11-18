@@ -1,0 +1,45 @@
+@import "style";
+
+.splash{
+  position: absolute;
+  width: 100%;
+  height: 488px;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0)), url("/splash.png");
+  @media only screen and (min-width: 1024px) {
+    height: 831px;
+  }
+}
+
+.splash-ad{
+  margin-top: 88px;
+  height: 400px;
+  gap: 40px;
+  @media only screen and (min-width: 1024px) {
+    height: 743px;
+    gap: 50px
+  }
+  width: 310px;
+  @media only screen and (min-width: 1024px) {
+    width: 914px;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  color: $cl-white;
+  text-align: center;
+}
+#splash-t2{
+  width: 310px;
+  @media only screen and (min-width: 1024px) {
+    width: 442px
+  }
+
+  @media only screen and (min-width: 1920px) {
+    width: 562px;
+  }
+}
