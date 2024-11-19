@@ -43,3 +43,17 @@
     width: 562px;
   }
 }
+#splash-bt{
+  background-color: $cl-white;
+  color: $cl-black;
+}
+@media only screen and (min-width: 1024px) {
+  #splash-bt:hover{
+    background-color: $cl-orange-2;
+    color: $cl-white
+  }
+  #splash-bt:active{
+    background-color: $cl-orange-1;
+    color: $cl-black
+  }
+}

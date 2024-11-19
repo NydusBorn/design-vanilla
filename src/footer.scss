@@ -48,10 +48,13 @@ footer-lc{
     align-items: center;
 }
 footer-link:hover{
-    cursor: pointer;
-    text-decoration: underline;
-    text-underline-color: $cl-black;
-    text-underline-style: single;
-    text-underline-position: under;
-    text-underline-offset: 2px;
+    @media only screen and (min-width: 1024px) {
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-color: $cl-black;
+        text-underline-style: single;
+        text-underline-position: under;
+        text-underline-offset: 2px;
+    }
+
 }

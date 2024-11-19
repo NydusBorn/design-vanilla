@@ -81,6 +81,38 @@ h3 {
   }
 }
 
+//controls
+.glow-button{
+  border-width: 0;
+  background-color: rgba(0,0,0,0);
+}
+.mat-button{
+  border-radius: 10px;
+  border-width: 0;
+}
+.text-button{
+  border-width: 0;
+  background-color: rgba(0,0,0,0);
+}
+.bt-small{
+  width: 114px;
+  height: 33px;
+  @media only screen and (min-width: 1024px) {
+    width: 118px;
+    height: 34px;
+  }
+}
+.bt-med{
+  width: 134px;
+  height: 47px;
+  @media only screen and (min-width: 1024px) {
+    width: 235px;
+    height: 58px;
+  }
+}
+
+
+//general
 body{
   margin: 0;
 }
