@@ -1,0 +1,105 @@
+@import "style";
+
+#chooser-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 360px;
+  @media only screen and (min-width: 1024px) {
+    width: 1024px;
+  }
+  @media only screen and (min-width: 1920px) {
+    width: 1170px;
+  }
+}
+#tabs{
+  width: 257px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  @media only screen and (min-width: 1024px) {
+    width: 700px;
+    gap: 30px;
+  }
+}
+
+tab:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-color: $cl-black;
+  text-underline-style: single;
+  text-underline-position: under;
+  text-underline-offset: 2px;
+}
+tab[active]{
+  text-decoration: underline;
+  text-underline-color: $cl-orange-2;
+  text-underline-style: single;
+  text-underline-position: under;
+  text-underline-offset: 2px;
+  color: $cl-orange-2;
+}
+#chooser-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:18px;
+  margin-top: 50px;
+  @media only screen and (min-width: 1024px) {
+    margin-top: 100px;
+  }
+  @media only screen and (min-width: 1920px) {
+    gap: 30px;
+  }
+}
+chooser-card{
+  display: grid;
+  width: 318px;
+  height: 318px;
+  border-radius: 20px;
+  overflow: clip;
+  @media only screen and (min-width: 1024px) {
+    width: 450px;
+    height: 531px;
+    border-radius: 50px;
+  }
+  @media only screen and (min-width: 1920px) {
+    width: 370px;
+  }
+}
+.chooser-content{
+  position: absolute;
+  display: grid;
+  z-index: 1;
+  padding: 25px;
+  @media only screen and (min-width: 1024px) {
+    padding: 50px;
+  }
+}
+.chooser-back{
+  z-index: -1;
+  width: inherit;
+  height: inherit;
+  background-size: cover;
+  background-position: center;
+  scale: 1;
+  transition: scale 0.3s ease-in-out;
+  chooser-card:hover &{
+    scale: 1.2;
+  }
+}
+.chooser-h, .chooser-p{
+  width: 290px;
+  color: $cl-white;
+}
+
+#ch1{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),  url("/chooser1.png");}
+#ch2{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser2.png");}
+#ch3{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser3.png");}
+#ch4{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser4.png");}
+#ch5{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser5.jpeg");}
+#ch6{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser6.png");}

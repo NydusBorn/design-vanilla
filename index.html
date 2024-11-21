@@ -1,92 +1,141 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
     <link rel="stylesheet" href="/src/style.scss"/>
     <link rel="stylesheet" href="/src/nav.scss"/>
     <link rel="stylesheet" href="/src/footer.scss"/>
-    <link rel="stylesheet" href="/src/content.scss"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="YourTour, Тур, Истории, Путешествия, Прогулки, Stories, Travels, Experiences, Adventures">
+    <link rel="stylesheet" href="/src/splash.scss"/>
+    <link rel="stylesheet" href="/src/chooser.scss"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords"
+          content="YourTour, Тур, Истории, Путешествия, Прогулки, Stories, Travels, Experiences, Adventures">
     <title>YourTour</title>
-  </head>
-  <body>
-    <script type="module" src="/src/main.ts"></script>
-    <div id="observe-point"/>
-    <div>
-      <div class="splash"/>
-      <nav>
+</head>
+<body>
+<script type="module" src="/src/main.ts"></script>
+<div>
+    <div class="splash"/>
+    <nav>
         <div id="nav-menu">
-          <img src="/YourTour.svg" id="nav-logo" alt="YourTour"/>
-          <div id="nav-links">
-            <nav-link class="p-med">Туры</nav-link>
-            <nav-link class="p-med">Создать тур</nav-link>
-            <nav-link class="p-med">Отзывы</nav-link>
-            <nav-link class="p-med">Истории</nav-link>
-          </div>
-          <p id="phone-number" class="p-med">+7 999 999 99 99</p>
+            <img src="/YourTour.svg" id="nav-logo" alt="YourTour"/>
+            <div id="nav-links">
+                <nav-link class="p-med">Туры</nav-link>
+                <nav-link class="p-med">Создать тур</nav-link>
+                <nav-link class="p-med">Отзывы</nav-link>
+                <nav-link class="p-med">Истории</nav-link>
+            </div>
+            <p id="phone-number" class="p-med">+7 999 999 99 99</p>
         </div>
-      </nav>
-      <main>
+    </nav>
+    <main>
         <div class="splash-ad">
-          <h1>
-            Идеальные путешествия существуют
-          </h1>
-          <p id="splash-t2" class="p-med">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-          <button class="mat-button bt-small p-sm" id="splash-bt">Найти тур</button>
+            <h1>
+                Идеальные путешествия существуют
+            </h1>
+            <p id="splash-t2" class="p-med">Идейные соображения высшего порядка, а также рамки и место обучения
+                кадров</p>
+            <button class="mat-button bt-small p-sm" id="splash-bt">Найти тур</button>
         </div>
         <div id="chooser-container">
-          <h2>Выбери свой тур</h2>
-          <div id="tabs">
-            <tab class="p-big">Популярные</tab>
-            <tab class="p-big">Авторские</tab>
-            <tab class="p-big">Походы</tab>
-            <tab class="p-big">Сплавы</tab>
-            <tab class="p-big">Велопрогулки</tab>
-          </div>
-          <div>
-
-          </div>
+            <h2>Выбери свой тур</h2>
+            <div id="tabs">
+                <tab class="p-big" active>Популярные</tab>
+                <tab class="p-big">Авторские</tab>
+                <tab class="p-big">Походы</tab>
+                <tab class="p-big">Сплавы</tab>
+                <tab class="p-big">Велопрогулки</tab>
+            </div>
+            <div id="chooser-cards">
+                <chooser-card>
+                    <div id="ch1" class="chooser-back"></div>
+                    <div class="chooser-content">
+                        <h3 class="chooser-h">Путешествие в горы</h3>
+                        <p class="p-sm chooser-p">от 80 000 руб</p>
+                        <button class="mat-button bt-small p-sm">Подробнее</button>
+                    </div>
+                </chooser-card>
+                <chooser-card>
+                    <div id="ch2" class="chooser-back"></div>
+                    <div class="chooser-content">
+                        <h3 class="chooser-h">Путешествие в горы</h3>
+                        <p class="p-sm chooser-p">от 80 000 руб</p>
+                        <button class="mat-button bt-small p-sm">Подробнее</button>
+                    </div>
+                </chooser-card>
+                <chooser-card>
+                    <div id="ch3" class="chooser-back"></div>
+                    <div class="chooser-content">
+                        <h3 class="chooser-h">Путешествие в горы</h3>
+                        <p class="p-sm chooser-p">от 80 000 руб</p>
+                        <button class="mat-button bt-small p-sm">Подробнее</button>
+                    </div>
+                </chooser-card>
+                <chooser-card>
+                    <div id="ch4" class="chooser-back"></div>
+                    <div class="chooser-content">
+                        <h3 class="chooser-h">Путешествие в горы</h3>
+                        <p class="p-sm chooser-p">от 80 000 руб</p>
+                        <button class="mat-button bt-small p-sm">Подробнее</button>
+                    </div>
+                </chooser-card>
+                <chooser-card>
+                    <div id="ch5" class="chooser-back"></div>
+                    <div class="chooser-content">
+                        <h3 class="chooser-h">Путешествие в горы</h3>
+                        <p class="p-sm chooser-p">от 80 000 руб</p>
+                        <button class="mat-button bt-small p-sm">Подробнее</button>
+                    </div>
+                </chooser-card>
+                <chooser-card>
+                    <div id="ch6" class="chooser-back"></div>
+                    <div class="chooser-content">
+                        <h3 class="chooser-h">Путешествие в горы</h3>
+                        <p class="p-sm chooser-p">от 80 000 руб</p>
+                        <button class="mat-button bt-small p-sm">Подробнее</button>
+                    </div>
+                </chooser-card>
+            </div>
         </div>
         <p style="height: 400px">
 
         </p>
         <p style="height: 500px">
-          make
+            make
         </p>
         <p style="height: 300px">
-          reviews
+            reviews
         </p>
         <p style="height: 600px">
-          photos
+            photos
         </p>
         <p style="height: 400px">
-          stories
+            stories
         </p>
         <p style="height: 200px">
-          contacts
+            contacts
         </p>
-      </main>
-      <footer>
+    </main>
+    <footer>
         <div id="footer-menu">
-          <p id="footer-title" class="p-med">Наши социальные сети</p>
-          <div id="footer-links">
-            <footer-lc>
-              <img src="/instagram.svg" width="14" height="14" alt="instagram logo" />
-              <footer-link class="p-med">instagram</footer-link>
-            </footer-lc>
-            <footer-lc>
-              <img src="/facebook.svg" width="8" height="17" alt="facebook logo" />
-              <footer-link class="p-med">facebook</footer-link>
-            </footer-lc>
-            <footer-lc>
-              <img src="/vk.svg" width="20" height="12" alt="vkontakte logo" />
-              <footer-link class="p-med">vkontakte</footer-link>
-            </footer-lc>
-          </div>
+            <p id="footer-title" class="p-med">Наши социальные сети</p>
+            <div id="footer-links">
+                <footer-lc>
+                    <img src="/instagram.svg" width="14" height="14" alt="instagram logo"/>
+                    <footer-link class="p-med">instagram</footer-link>
+                </footer-lc>
+                <footer-lc>
+                    <img src="/facebook.svg" width="8" height="17" alt="facebook logo"/>
+                    <footer-link class="p-med">facebook</footer-link>
+                </footer-lc>
+                <footer-lc>
+                    <img src="/vk.svg" width="20" height="12" alt="vkontakte logo"/>
+                    <footer-link class="p-med">vkontakte</footer-link>
+                </footer-lc>
+            </div>
         </div>
-      </footer>
-    </div>
-  </body>
+    </footer>
+</div>
+</body>
 </html>

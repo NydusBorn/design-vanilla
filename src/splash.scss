@@ -1,5 +1,4 @@
 @import "style";
-
 .splash{
   position: absolute;
   width: 100%;
@@ -29,7 +28,6 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-
   color: $cl-white;
   text-align: center;
 }
@@ -56,11 +54,4 @@
     background-color: $cl-orange-1;
     color: $cl-black
   }
-}
-
-#chooser-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
 }

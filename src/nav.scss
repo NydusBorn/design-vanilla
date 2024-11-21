@@ -7,7 +7,7 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  //backdrop-filter: blur(10px);
+  z-index: 2;
 }
 #observe-point{
   height: 450px;
