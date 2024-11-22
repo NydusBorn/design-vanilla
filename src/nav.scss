@@ -9,9 +9,6 @@ nav{
   justify-content: center;
   z-index: 2;
 }
-#observe-point{
-  height: 450px;
-}
 #nav-menu{
   display: flex;
   flex-direction: row;
@@ -28,6 +25,9 @@ nav{
 #nav-logo{
   width: 133px;
   height: 22px;
+  background-image: url("/YourTour-light.svg");
+  color: $cl-white;
+  background-size: cover;
   @media only screen and (min-width: 1024px) {
     width:181.84px;
     height:30.24px;
@@ -41,9 +41,7 @@ nav{
   flex-direction: row;
   width: 408px;
   @media only screen and (min-width: 1920px) {
-
     width: 468px;
-
   }
   justify-content: space-between;
 }
