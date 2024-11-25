@@ -106,13 +106,29 @@ chooser-card{
 .chooser-bt{
   align-self: start;
   color: $cl-white;
-  padding: 0;
+  border-radius: 50px;
   margin-top: 178px;
   @media only screen and (min-width: 1024px) {
     margin-top: 280px;
+    padding: 7px 20px;
   }
   @media only screen and (min-width: 1920px) {
     margin-top: 277px;
+  }
+}
+.chooser-bt::after{
+  margin-left: 15px;
+  content: url("/public/arrow-white.svg");
+}
+.chooser-bt:hover{
+  @media only screen and (min-width: 1024px) {
+    cursor: pointer;
+    background-color: $cl-green-4;
+  }
+}
+.chooser-bt:active{
+  @media only screen and (min-width: 1024px) {
+    background-color: $cl-orange-2;
   }
 }
 

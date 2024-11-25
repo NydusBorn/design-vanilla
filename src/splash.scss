@@ -31,10 +31,16 @@
   color: $cl-white;
   text-align: center;
 }
+#splash-t1{
+  margin-top: 52px;
+  @media only screen and (min-width: 1024px) {
+    margin-top: 119px;
+  }
+}
 #splash-t2{
   width: 310px;
   @media only screen and (min-width: 1024px) {
-    width: 442px
+    width: 442px;
   }
 
   @media only screen and (min-width: 1920px) {
