@@ -8,7 +8,7 @@ window.addEventListener("scroll",() => {
     if (window.scrollY >= 450){
         navbar.style.backdropFilter = "blur(10px)"
         navbar.style.marginTop = `${window.scrollY}px`
-        navbar.style.backgroundColor = "#F4F0E960"
+        navbar.style.backgroundColor = "rgba(243, 239, 232, 0.6)"
         logo.style.backgroundImage = `url("/design-vanilla/YourTour-dark.svg")`
         phone.style.color = "#1B1F2B"
         for (const linkElement of link) {
