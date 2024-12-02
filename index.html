@@ -105,42 +105,46 @@
             <form class="maker-form">
                 <div class="maker-field">
                     <label class="p-med" for="maker-name">Имя</label>
-                    <input id="maker-name" class="maker-input" type="text" placeholder="Введите Ваше имя"/>
+                    <input id="maker-name" class="maker-input p-med" type="text" placeholder="Введите Ваше имя"/>
                 </div>
                 <div class="maker-field">
                     <label class="p-med" for="maker-dest">Направления</label>
-                    <input id="maker-dest" class="maker-input" type="text" placeholder="Куда хотите ехать"/>
+                    <input id="maker-dest" class="maker-input p-med" type="text" placeholder="Куда хотите ехать"/>
                 </div>
                 <div class="maker-field">
                     <label class="p-med" for="maker-email">Email</label>
-                    <input id="maker-email" class="maker-input" type="text" placeholder="example@mail.com"/>
+                    <input id="maker-email" class="maker-input p-med" type="text" placeholder="example@mail.com"/>
                 </div>
                 <div class="maker-field">
                     <label class="p-med" for="maker-phone">Телефон</label>
-                    <input id="maker-phone" class="maker-input" type="text" placeholder="+ 7 (___) ___-__-__"/>
+                    <input id="maker-phone" class="maker-input p-med" type="text" placeholder="+ 7 (___) ___-__-__"/>
                 </div>
                 <div class="maker-field">
                     <label class="p-med" for="maker-from">Дата от</label>
-                    <input id="maker-from" class="maker-input" type="text" placeholder="ДД.ММ.ГГГГ"/>
+                    <input id="maker-from" class="maker-input p-med" type="text" placeholder="ДД.ММ.ГГГГ"/>
                 </div>
                 <div class="maker-field">
                     <label class="p-med" for="maker-to">Дата до</label>
-                    <input id="maker-to" class="maker-input" type="text" placeholder="ДД.ММ.ГГГГ"/>
+                    <input id="maker-to" class="maker-input p-med" type="text" placeholder="ДД.ММ.ГГГГ"/>
                 </div>
-                <div class="maker-field">
+                <div class="maker-line-field">
                     <label class="p-med" for="maker-com">Комментарий</label>
-                    <input id="maker-com" class="maker-input" type="text"/>
+                    <input id="maker-com" class="maker-input p-med" type="text"/>
                 </div>
-                <div class="maker-field">
+                <div class="maker-line-field">
                     <label class="p-med" for="maker-age">Вам есть 18 лет?</label>
                     <div id="maker-age" class="radio-container">
-                        <input class="maker-radio" type="radio" value="Да"/>
-                        <input class="maker-radio" type="radio" value="Нет"/>
+                        <input class="maker-radio p-med" type="radio" value="Да">Да
+                        <input class="maker-radio p-med" type="radio" value="Нет">Нет
                     </div>
                 </div>
-                <input type="checkbox"/>
-                <button class="mat-button">Найти тур</button>
-                <button class="mat-button">Сбросить</button>
+                <div class="maker-input-container">
+                    <input type="checkbox" class="p-sm">Нажимая кнопку, я принимаю условия Лицензионного договора
+                </div>
+                <div class="maker-bt-container">
+                    <button class="mat-button">Найти тур</button>
+                    <button class="mat-button">Сбросить</button>
+                </div>
             </form>
         </div>
         <p style="height: 300px">
