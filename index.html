@@ -109,7 +109,11 @@
                 </div>
                 <div class="maker-field">
                     <label class="p-med" for="maker-dest">Направления</label>
-                    <input id="maker-dest" class="maker-input p-med" type="text" placeholder="Куда хотите ехать"/>
+                    <select id="maker-dest" required class="maker-input p-med">
+                        <option disabled selected value hidden>Куда хотите ехать</option>
+                        <option value="Горы">Горы</option>
+                        <option value="Пляж">Пляж</option>
+                    </select>
                 </div>
                 <div class="maker-field">
                     <label class="p-med" for="maker-email">Email</label>

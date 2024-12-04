@@ -63,16 +63,27 @@
   }
 }
 .maker-input{
-  border-width: 0;
   width: 100%;
   height: 43px;
-  background-color: $cl-beige-2;
+  background-color: $cl-beige-1;
   border-radius: 10px;
   padding: 10px;
   box-sizing: border-box;
+  border: 1px solid $cl-beige-2;
   @media only screen and (min-width: 1024px) {
     height: 68px;
     padding: 20px;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $cl-beige-2;
+  }
+  &:focus{
+    background-color: $cl-beige-2;
+    outline-color: $cl-gray-3;
+  }
+  &::placeholder{
+    color: $cl-gray-3;
   }
 }
 .maker-line-field{
@@ -102,5 +113,19 @@
   gap: 10px;
   @media only screen and (min-width: 1024px) {
     gap: 30px;
+  }
+}
+#maker-dest:required:invalid{
+  color: $cl-gray-3;
+}
+#maker-dest {
+  appearance: none;
+  background-image: url("/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 15px;
+  padding-right: 20px;
+  @media only screen and (min-width: 1024px) {
+    padding-right: 30px;
   }
 }
