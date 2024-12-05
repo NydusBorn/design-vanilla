@@ -129,3 +129,114 @@
     padding-right: 30px;
   }
 }
+fieldset{
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+.radio-container{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  @media only screen and (min-width: 1024px) {
+    gap: 31px;
+  }
+}
+.radio-item{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  @media only screen and (min-width: 1024px) {
+    gap: 11px;
+  }
+}
+input{
+  margin: 0;
+}
+input[type="radio"] {
+  appearance: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid $cl-black;
+  @media only screen and (min-width: 1024px) {
+    border: 2px solid $cl-black;
+    width: 26px;
+    height: 26px;
+  }
+}
+input[type="radio"]:checked {
+  background-color: transparent;
+  &::before {
+    content: "";
+    display: block;
+    width: 9.23px;
+    height: 9.23px;
+    border-radius: 50%;
+    background-color: $cl-black;
+    @media only screen and (min-width: 1024px) {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+.maker-check-container{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  @media only screen and (min-width: 1024px) {
+    gap: 11px;
+  }
+}
+input[type="checkbox"] {
+  align-self: start;
+  appearance: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid $cl-black;
+  @media only screen and (min-width: 1024px) {
+    border-radius: 5px;
+    border: 2px solid $cl-black;
+    width: 26px;
+    height: 26px;
+  }
+}
+input[type="checkbox"]:checked {
+  background-color: transparent;
+  &::before {
+    content: "";
+    display: block;
+    width: 9.23px;
+    height: 9.23px;
+    background-image: url("/checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    @media only screen and (min-width: 1024px) {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+.maker-span{
+  width: 248px;
+  @media only screen and (min-width: 1024px) {
+    width: 100%;
+  }
+}

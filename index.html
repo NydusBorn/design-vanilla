@@ -137,13 +137,19 @@
                 </div>
                 <div class="maker-line-field">
                     <label class="p-med" for="maker-age">Вам есть 18 лет?</label>
-                    <div id="maker-age" class="radio-container">
-                        <input class="maker-radio p-med" type="radio" value="Да">Да
-                        <input class="maker-radio p-med" type="radio" value="Нет">Нет
-                    </div>
+                    <fieldset id="maker-rg">
+                        <div id="maker-age" class="radio-container">
+                            <div class="radio-item">
+                                <input name="maker-rg" type="radio" value="Да"><div class="p-med">Да</div>
+                            </div>
+                            <div class="radio-item">
+                                <input name="maker-rg" type="radio" value="Нет"><div class="p-med">Нет</div>
+                            </div>
+                        </div>
+                    </fieldset>
                 </div>
-                <div class="maker-input-container">
-                    <input type="checkbox" class="p-sm">Нажимая кнопку, я принимаю условия Лицензионного договора
+                <div class="maker-check-container">
+                    <input type="checkbox"><span class="p-sm maker-span" style="color: #A6A6A6">Нажимая кнопку, я принимаю условия <span style="color: #000">Лицензионного договора</span></span>
                 </div>
                 <div class="maker-bt-container">
                     <button class="mat-button">Найти тур</button>
