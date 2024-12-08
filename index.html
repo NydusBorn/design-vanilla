@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/src/splash.scss"/>
     <link rel="stylesheet" href="/src/chooser.scss"/>
     <link rel="stylesheet" href="/src/maker.scss"/>
+    <link rel="stylesheet" href="/src/reviews.scss"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="keywords"
           content="YourTour, Тур, Истории, Путешествия, Прогулки, Stories, Travels, Experiences, Adventures">
@@ -105,7 +106,7 @@
             <form class="maker-form">
                 <div class="maker-field">
                     <label class="p-med" for="maker-name">Имя</label>
-                    <input id="maker-name" class="maker-input p-med" type="text" placeholder="Введите Ваше имя"/>
+                    <input id="maker-name" required class="maker-input p-med" type="text" placeholder="Введите Ваше имя"/>
                 </div>
                 <div class="maker-field">
                     <label class="p-med" for="maker-dest">Направления</label>
@@ -117,19 +118,19 @@
                 </div>
                 <div class="maker-field">
                     <label class="p-med" for="maker-email">Email</label>
-                    <input id="maker-email" class="maker-input p-med" type="text" placeholder="example@mail.com"/>
+                    <input id="maker-email" required class="maker-input p-med" type="text" placeholder="example@mail.com"/>
                 </div>
                 <div class="maker-field">
                     <label class="p-med" for="maker-phone">Телефон</label>
-                    <input id="maker-phone" class="maker-input p-med" type="text" placeholder="+ 7 (___) ___-__-__"/>
+                    <input id="maker-phone" required class="maker-input p-med" type="text" placeholder="+ 7 (___) ___-__-__"/>
                 </div>
                 <div class="maker-field">
                     <label class="p-med" for="maker-from">Дата от</label>
-                    <input id="maker-from" class="maker-input p-med" type="text" placeholder="ДД.ММ.ГГГГ"/>
+                    <input id="maker-from" required class="maker-input p-med" type="text" placeholder="ДД.ММ.ГГГГ"/>
                 </div>
                 <div class="maker-field">
                     <label class="p-med" for="maker-to">Дата до</label>
-                    <input id="maker-to" class="maker-input p-med" type="text" placeholder="ДД.ММ.ГГГГ"/>
+                    <input id="maker-to" required class="maker-input p-med" type="text" placeholder="ДД.ММ.ГГГГ"/>
                 </div>
                 <div class="maker-line-field">
                     <label class="p-med" for="maker-com">Комментарий</label>
@@ -140,7 +141,7 @@
                     <fieldset id="maker-rg">
                         <div id="maker-age" class="radio-container">
                             <div class="radio-item">
-                                <input name="maker-rg" type="radio" value="Да"><div class="p-med">Да</div>
+                                <input name="maker-rg" required type="radio" value="Да"><div class="p-med">Да</div>
                             </div>
                             <div class="radio-item">
                                 <input name="maker-rg" type="radio" value="Нет"><div class="p-med">Нет</div>
@@ -149,17 +150,39 @@
                     </fieldset>
                 </div>
                 <div class="maker-check-container">
-                    <input type="checkbox"><span class="p-sm maker-span" style="color: #A6A6A6">Нажимая кнопку, я принимаю условия <span style="color: #000">Лицензионного договора</span></span>
+                    <input required type="checkbox"><span class="p-sm maker-span" style="color: #A6A6A6">Нажимая кнопку, я принимаю условия <span style="color: #000">Лицензионного договора</span></span>
                 </div>
                 <div class="maker-bt-container">
-                    <button class="mat-button">Найти тур</button>
-                    <button class="mat-button">Сбросить</button>
+                    <button id="maker-bt-1" class="mat-button maker-bt">Найти тур</button>
+                    <button id="maker-bt-2" class="mat-button maker-bt">Сбросить</button>
                 </div>
             </form>
         </div>
-        <p style="height: 300px">
-            reviews
-        </p>
+        <div id="reviews-container">
+            <div class="t-h2" id="reviews-ad">Отзывы наших путешественников</div>
+            <div class="p-med" id="reviews-p">Идейные соображения высшего порядка, а также рамки и место обучения кадров</div>
+            <div id="reviews-cards">
+                <div class="reviews-card">
+                    <div class="p-big">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития.</div>
+                    <div class="reviews-author">
+                        <div class="reviews-name">
+
+                        </div>
+                        <div class="reviews-photo"></div>
+                    </div>
+                </div>
+                <div class="reviews-card">
+                    <div class="p-big">Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.
+                        <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p></div>
+                    <div class="reviews-author">
+                        <div class="reviews-name">
+
+                        </div>
+                        <div class="reviews-photo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <p style="height: 600px">
             photos
         </p>

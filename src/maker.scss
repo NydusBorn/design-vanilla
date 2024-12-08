@@ -240,3 +240,33 @@ input[type="checkbox"]:checked {
     width: 100%;
   }
 }
+.maker-bt{
+  width: 134px;
+  height: 47px;
+  @media only screen and (min-width: 1024px) {
+    width: 235px;
+    height: 58px;
+  }
+}
+#maker-bt-1{
+  background-color: $cl-green-4;
+  color: $cl-white;
+  &:hover{
+    background-color: $cl-green-3;
+    cursor: pointer;
+  }
+  &:active{
+    background-color: $cl-green-2;
+  }
+}
+#maker-bt-2{
+  background-color: $cl-green-1;
+  color: $cl-green-4;
+  &:hover{
+    background-color: $cl-gray-1;
+    cursor: pointer;
+  }
+  &:active{
+    background-color: $cl-gray-2;
+  }
+}
