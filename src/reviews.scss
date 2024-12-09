@@ -64,3 +64,31 @@
     height: 673px;
   }
 }
+.reviews-author{
+  height: 115px;
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  @media only screen and (min-width: 1024px) {
+    height: 145px;
+  }
+}
+.reviews-name{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.reviews-author-tour{
+  color: $cl-gray-3;
+}
+.reviews-photo{
+  background-size: contain;
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+#reviews-author-1{background-image: url("/review photo-1.png")}
+#reviews-author-2{background-image: url("/review photo-2.png")}
