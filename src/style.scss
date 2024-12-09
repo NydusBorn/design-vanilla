@@ -121,11 +121,11 @@ main{
   display: flex;
   flex-direction: column;
   gap:75px;
+  justify-content: center;
+  align-items: center;
   @media only screen and (min-width: 1024px) {
     gap:135px;
   }
-  justify-content: center;
-  align-items: center;
 }
 
 :root{

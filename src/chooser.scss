@@ -1,5 +1,4 @@
-@import "style";
-
+@use "style" as *;
 #chooser-container{
   display: flex;
   flex-direction: column;
