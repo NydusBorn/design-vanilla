@@ -1,0 +1,131 @@
+@use "style" as *;
+#adventures-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+#adventures-ad{
+  text-align: center;
+}
+#adventures-p{
+  text-align: center;
+  width: 318px;
+  color: $cl-gray-3;
+  margin-top: 20px;
+  @media only screen and (min-width: 1024px) {
+    width: 400px;
+    margin-top: 30px;
+  }
+}
+#adventures-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 50px;
+  row-gap: 18px;
+  width: 318px;
+  @media only screen and (min-width: 1024px) {
+    row-gap: 31px;
+    margin-top: 100px;
+    width: 984px;
+  }
+  @media only screen and (min-width: 1920px) {
+    row-gap: 30px;
+    width: 1860px;
+  }
+}
+.adventures-card{
+  height: 110px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  @media only screen and (min-width: 1024px) {
+    height: 300px;
+    border-radius: 50px;
+  }
+}
+.adventures-card-odd-row{
+  width: 150px;
+  @media only screen and (min-width: 1024px) {
+    width: 314.67px;
+  }
+  @media only screen and (min-width: 1920px) {
+    width: 443px;
+  }
+}
+.adventures-card-even-row{
+  width: 99.33px;
+  @media only screen and (min-width: 1024px) {
+    width: 231px;
+  }
+  @media only screen and (min-width: 1920px) {
+    width: 348.87px;
+  }
+}
+#adventures-card-1{
+  background-image: url("/adventure-1.png");
+}
+#adventures-card-2{
+  background-image: url("/adventure-2.png");
+  display: none;
+  @media only screen and (min-width: 1920px) {
+    display: flex;
+  }
+}
+#adventures-card-3{
+  background-image: url("/adventure-3.png");
+  display: none;
+  @media only screen and (min-width: 1024px) {
+    display: flex;
+  }
+}
+#adventures-card-4{
+  background-image: url("/adventure-4.png");
+}
+#adventures-card-5{
+  background-image: url("/adventure-5.png");
+}
+#adventures-card-6{
+  background-image: url("/adventure-6.png");
+  display: none;
+  @media only screen and (min-width: 1024px) {
+    display: flex;
+  }
+}
+#adventures-card-7{
+  background-image: url("/adventure-7.jpeg");
+  display: none;
+  @media only screen and (min-width: 1920px) {
+    display: flex;
+  }
+}
+#adventures-card-8{
+  background-image: url("/adventure-8.png");
+}
+#adventures-card-9{
+  background-image: url("/adventure-9.png");
+}
+#adventures-card-10{
+  background-image: url("/adventure-10.png");
+}
+#adventures-card-11{
+  background-image: url("/adventure-11.png");
+}
+#adventures-card-12{
+  background-image: url("/adventure-12.png");
+  display: none;
+  @media only screen and (min-width: 1024px) {
+    display: flex;
+  }
+}
+#adventures-card-13{
+  background-image: url("/adventure-13.png");
+  display: none;
+  @media only screen and (min-width: 1920px) {
+    display: flex;
+  }
+}

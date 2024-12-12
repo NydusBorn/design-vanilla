@@ -85,7 +85,8 @@
   color: $cl-gray-3;
 }
 .reviews-photo{
-  background-size: contain;
+  background-size: cover;
+  background-position: center top;
   width: 75px;
   height: 75px;
   border-radius: 100%;
