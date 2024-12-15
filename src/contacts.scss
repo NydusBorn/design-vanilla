@@ -1,1 +1,48 @@
 @use "style" as *;
+#contacts-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  @media only screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+#contacts-splash{
+  width: 130px;
+  height: 133px;
+  border-radius: 20px;
+  background-image: url("/credits.png");
+  background-position: center;
+  background-size: cover;
+  @media only screen and (min-width: 1024px) {
+    width: 370px;
+    height: 370px;
+    border-radius: 50px;
+  }
+}
+#contacts-p{
+  color: $cl-gray-2;
+}
+#contacts-text{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 291px;
+  text-align: center;
+  @media only screen and (min-width: 1024px) {
+    text-align: left;
+    width: 371px;
+  }
+}
+#contacts-link{
+  color: $cl-black;
+  &:hover{
+    text-decoration: underline;
+    text-underline-color: $cl-black;
+    text-underline-style: single;
+    text-underline-position: under;
+    text-underline-offset: 2px;
+  }
+}

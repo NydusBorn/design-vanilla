@@ -69,6 +69,7 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  box-sizing: border-box;
   width: 318px;
   height: 455px;
   padding: 30px;
@@ -96,6 +97,56 @@
     width: 554px;
     margin-top: 37px;
   }
+}
+.stories-card-actions{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+.stories-bt{
+  align-self: start;
+  color: $cl-white;
+  border-radius: 50px;
+  @media only screen and (min-width: 1024px) {
+    padding: 7px 20px;
+  }
+}
+.stories-bt::after{
+  margin-left: 15px;
+  content: url("/arrow-white.svg");
+}
+.stories-bt:hover{
+  @media only screen and (min-width: 1024px) {
+    cursor: pointer;
+    background-color: $cl-green-4;
+  }
+}
+.stories-bt:active{
+  @media only screen and (min-width: 1024px) {
+    background-color: $cl-orange-2;
+  }
+}
+.stories-links{
+  display: none;
+  flex-direction: row;
+  gap: 35px;
+  @media only screen and (min-width: 1024px) {
+    display: flex;
+  }
+}
+.stories-link{
+  color: $cl-white
+}
+.stories-link:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-color: $cl-white;
+  text-underline-style: single;
+  text-underline-position: under;
+  text-underline-offset: 2px;
 }
 #stories-card-1{background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("/story-1.png")}
 #stories-card-2{background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("/story-2.png")}
