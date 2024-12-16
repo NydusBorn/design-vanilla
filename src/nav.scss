@@ -47,10 +47,10 @@ nav{
 #phone-number{
   color: $cl-white;
 }
-nav-link{
+.nav-link{
   color: $cl-white;
 }
-nav-link:hover{
+.nav-link:hover{
   @media only screen and (min-width: 1024px) {
     cursor: pointer;
     text-decoration: underline;

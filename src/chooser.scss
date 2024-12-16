@@ -25,7 +25,7 @@
   }
 }
 
-tab:hover{
+.tab:hover{
   cursor: pointer;
   text-decoration: underline;
   text-underline-color: $cl-black;
@@ -33,7 +33,7 @@ tab:hover{
   text-underline-position: under;
   text-underline-offset: 2px;
 }
-tab[active]{
+.tab[active]{
   text-decoration: underline;
   text-underline-color: $cl-orange-2;
   text-underline-style: single;
@@ -55,7 +55,7 @@ tab[active]{
     gap: 30px;
   }
 }
-chooser-card{
+.chooser-card{
   display: grid;
   width: 318px;
   height: 318px;
@@ -93,8 +93,11 @@ chooser-card{
   }
 }
 .chooser-h, .chooser-p{
-  width: 290px;
+  width: 350px;
   color: $cl-white;
+  @media only screen and (min-width: 1920px) {
+    width: 200px;
+  }
 }
 .chooser-h{
   margin-bottom: 13px;
