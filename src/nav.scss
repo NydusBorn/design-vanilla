@@ -26,7 +26,9 @@ nav{
   height: 22px;
   background-image: url("/YourTour-light.svg");
   color: $cl-white;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   @media only screen and (min-width: 1024px) {
     width:181.84px;
     height:30.24px;
@@ -49,6 +51,7 @@ nav{
 }
 .nav-link{
   color: $cl-white;
+  text-decoration: none;
 }
 .nav-link:hover{
   @media only screen and (min-width: 1024px) {

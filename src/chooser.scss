@@ -88,7 +88,7 @@
   background-position: center;
   scale: 1;
   transition: scale 0.3s ease-in-out;
-  chooser-card:hover &{
+  .chooser-card:hover &{
     scale: 1.2;
   }
 }
@@ -140,9 +140,9 @@
   }
 }
 
-#ch1{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),  url("/chooser1.png");}
-#ch2{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser2.png");}
-#ch3{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser3.png");}
-#ch4{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser4.png");}
-#ch5{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser5.jpeg");}
-#ch6{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser6.png");}
+#ch1{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),  url("/chooser1.webp");}
+#ch2{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser2.webp");}
+#ch3{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser3.webp");}
+#ch4{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser4.webp");}
+#ch5{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser5.webp");}
+#ch6{background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("/chooser6.webp");}

@@ -13,7 +13,7 @@
   width: 130px;
   height: 133px;
   border-radius: 20px;
-  background-image: url("/credits.png");
+  background-image: url("/credits.webp");
   background-position: center;
   background-size: cover;
   @media only screen and (min-width: 1024px) {
@@ -38,9 +38,18 @@
 }
 #contacts-link{
   color: $cl-black;
+  text-decoration: none;
   &:hover{
     text-decoration: underline;
     text-underline-color: $cl-black;
+    text-underline-style: single;
+    text-underline-position: under;
+    text-underline-offset: 2px;
+  }
+  &:active{
+    color: $cl-green-4;
+    text-decoration: underline;
+    text-underline-color: $cl-green-4;
     text-underline-style: single;
     text-underline-position: under;
     text-underline-offset: 2px;

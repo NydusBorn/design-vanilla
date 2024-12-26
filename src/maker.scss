@@ -241,6 +241,29 @@ input[type="checkbox"]:checked {
     width: 100%;
   }
 }
+#maker-license-t{
+  color: $cl-gray-3;
+}
+#maker-license-l{
+  color: $cl-black;
+  &:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-color: $cl-black;
+    text-underline-style: single;
+    text-underline-position: under;
+    text-underline-offset: 2px;
+  }
+  &:active{
+    color: $cl-green-4;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-color: $cl-green-4;
+    text-underline-style: single;
+    text-underline-position: under;
+    text-underline-offset: 2px;
+  }
+}
 .maker-bt{
   width: 134px;
   height: 47px;

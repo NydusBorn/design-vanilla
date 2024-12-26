@@ -46,9 +46,21 @@ footer{
     gap: 5px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     @media only screen and (min-width: 1024px) {
         width: 120px;
         gap: 10px
+    }
+    &:hover{
+        .footer-link {
+            @media only screen and (min-width: 1024px) {
+                text-decoration: underline;
+                text-underline-color: $cl-black;
+                text-underline-style: single;
+                text-underline-position: under;
+                text-underline-offset: 2px;
+            }
+        }
     }
 }
 .footer-logo{
@@ -65,15 +77,3 @@ footer{
 #footer-logo-1{background-image: url("/telegram.svg")}
 #footer-logo-2{background-image: url("/facebook.svg")}
 #footer-logo-3{background-image: url("/vk.svg")}
-
-.footer-link:hover{
-    @media only screen and (min-width: 1024px) {
-        cursor: pointer;
-        text-decoration: underline;
-        text-underline-color: $cl-black;
-        text-underline-style: single;
-        text-underline-position: under;
-        text-underline-offset: 2px;
-    }
-
-}

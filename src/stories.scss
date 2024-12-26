@@ -148,6 +148,15 @@
   text-underline-position: under;
   text-underline-offset: 2px;
 }
-#stories-card-1{background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("/story-1.png")}
-#stories-card-2{background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("/story-2.png")}
-#stories-card-3{background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("/story-3.png")}
+.stories-link:active{
+  cursor: pointer;
+  color: #EFA501;
+  text-decoration: underline;
+  text-underline-color: $cl-orange-2;
+  text-underline-style: single;
+  text-underline-position: under;
+  text-underline-offset: 2px;
+}
+#stories-card-1{background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("/story-1.webp")}
+#stories-card-2{background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("/story-2.webp")}
+#stories-card-3{background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("/story-3.webp")}
