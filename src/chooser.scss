@@ -75,9 +75,17 @@
   display: flex;
   flex-direction: column;
   z-index: 1;
+  box-sizing: border-box;
   padding: 25px;
+  width: 318px;
+  height: 318px;
   @media only screen and (min-width: 1024px) {
     padding: 50px;
+    width: 450px;
+    height: 531px;
+  }
+  @media only screen and (min-width: 1920px) {
+    width: 370px;
   }
 }
 .chooser-back{
@@ -115,26 +123,23 @@
   align-self: start;
   color: $cl-white;
   border-radius: 50px;
-  margin-top: 178px;
+  margin-top: auto;
   @media only screen and (min-width: 1024px) {
-    margin-top: 280px;
     padding: 7px 20px;
-  }
-  @media only screen and (min-width: 1920px) {
-    margin-top: 277px;
+    margin-left: -20px;
   }
 }
 .chooser-bt::after{
   margin-left: 15px;
   content: url("/arrow-white.svg");
 }
-.chooser-bt:hover{
+.chooser-card:hover .chooser-bt{
   @media only screen and (min-width: 1024px) {
     cursor: pointer;
     background-color: $cl-green-4;
   }
 }
-.chooser-bt:active{
+.chooser-card:active .chooser-bt{
   @media only screen and (min-width: 1024px) {
     background-color: $cl-orange-2;
   }

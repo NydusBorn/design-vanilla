@@ -82,19 +82,27 @@ $ff-roboto: "Roboto", Serif;
 }
 
 //controls
+.bt-smoothing{
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
 .glow-button{
+  @extend .bt-smoothing;
   border-width: 0;
   background-color: rgba(0,0,0,0);
 }
 .mat-button{
+  @extend .bt-smoothing;
   border-radius: 10px;
   border-width: 0;
 }
 .text-button{
+  @extend .bt-smoothing;
   border-width: 0;
   background-color: rgba(0,0,0,0);
 }
 .bt-small{
+  @extend .bt-smoothing;
   width: 114px;
   height: 33px;
   @media only screen and (min-width: 1024px) {
@@ -103,6 +111,7 @@ $ff-roboto: "Roboto", Serif;
   }
 }
 .bt-med{
+  @extend .bt-smoothing;
   width: 134px;
   height: 47px;
   @media only screen and (min-width: 1024px) {
@@ -113,6 +122,9 @@ $ff-roboto: "Roboto", Serif;
 
 
 //general
+html{
+  scroll-behavior: smooth;
+}
 body{
   margin: 0;
 }

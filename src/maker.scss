@@ -119,6 +119,9 @@
 #maker-dest:required:invalid{
   color: $cl-gray-3;
 }
+option:enabled{
+  color: $cl-black;
+}
 #maker-dest {
   appearance: none;
   background-image: url("/arrow-down.svg");
