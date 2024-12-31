@@ -101,8 +101,11 @@
   }
 }
 .chooser-h, .chooser-p{
-  width: 350px;
+  width: 250px;
   color: $cl-white;
+  @media only screen and (min-width: 1024px) {
+    width: 350px;
+  }
   @media only screen and (min-width: 1920px) {
     width: 200px;
   }
