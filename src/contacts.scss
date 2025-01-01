@@ -1,4 +1,5 @@
 @use "style" as *;
+@use "responsify" as *;
 #contacts-container{
   display: flex;
   flex-direction: column;
@@ -10,9 +11,9 @@
   }
 }
 #contacts-splash{
-  width: 130px;
-  height: 133px;
-  border-radius: 20px;
+  width: responsify(360, 1024, 130, 370, "px");
+  height: responsify(360, 1024, 133, 370, "px");
+  border-radius: responsify(360, 1024, 20, 50, "px");
   background-image: url("/credits.webp");
   background-position: center;
   background-size: cover;
@@ -29,7 +30,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 291px;
+  width: responsify(360, 1024, 291, 371, "px");
   text-align: center;
   @media only screen and (min-width: 1024px) {
     text-align: left;

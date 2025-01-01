@@ -1,24 +1,25 @@
 @use "style" as *;
+@use "responsify" as *;
 #chooser-container{
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  width: 318px;
+  width: responsify(360, 1024, 318, 918, "px");
   @media only screen and (min-width: 1024px) {
-    width: 918px;
+    width: responsify(1024, 1920, 918, 1170, "px");
   }
   @media only screen and (min-width: 1920px) {
     width: 1170px;
   }
 }
 #tabs{
-  width: 257px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  width: responsify(360, 1024, 257, 700, "px");
+  gap: responsify(360, 1024, 10, 30, "px");
   @media only screen and (min-width: 1024px) {
     width: 700px;
     gap: 30px;
@@ -47,9 +48,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap:18px;
-  margin-top: 50px;
+  margin-top: responsify(360, 1024, 50, 100, "px");
   @media only screen and (min-width: 1024px) {
     margin-top: 100px;
+    gap: responsify(1024, 1920, 18, 30, "px");
   }
   @media only screen and (min-width: 1920px) {
     gap: 30px;
@@ -57,12 +59,12 @@
 }
 .chooser-card{
   display: grid;
-  width: 318px;
-  height: 318px;
-  border-radius: 20px;
   overflow: clip;
+  width: responsify(360, 1024, 318, 450, "px");
+  height: responsify(360, 1024, 318, 531, "px");
+  border-radius: responsify(360, 1024, 20, 50, "px");
   @media only screen and (min-width: 1024px) {
-    width: 450px;
+    width: responsify(1024, 1920, 450, 370, "px");
     height: 531px;
     border-radius: 50px;
   }
@@ -76,12 +78,12 @@
   flex-direction: column;
   z-index: 1;
   box-sizing: border-box;
-  padding: 25px;
-  width: 318px;
-  height: 318px;
+  padding: responsify(360, 1024, 25, 50, "px");
+  width: responsify(360, 1024, 318, 450, "px");
+  height: responsify(360, 1024, 318, 531, "px");
   @media only screen and (min-width: 1024px) {
     padding: 50px;
-    width: 450px;
+    width: responsify(1024, 1920, 450, 370, "px");
     height: 531px;
   }
   @media only screen and (min-width: 1920px) {
@@ -101,23 +103,23 @@
   }
 }
 .chooser-h, .chooser-p{
-  width: 250px;
+  width: responsify(360, 1024, 250, 350, "px");
   color: $cl-white;
   @media only screen and (min-width: 1024px) {
-    width: 350px;
+    width: responsify(1024, 1920, 250, 200, "px");
   }
   @media only screen and (min-width: 1920px) {
     width: 200px;
   }
 }
 .chooser-h{
-  margin-bottom: 13px;
+  margin-bottom: responsify(360, 1024, 13, 16, "px");
   @media only screen and (min-width: 1024px) {
     margin-bottom: 16px;
   }
 }
 .chooser-ad{
-  margin-bottom: 30px;
+  margin-bottom: responsify(360, 1024, 30, 35, "px");
   @media only screen and (min-width: 1024px) {
     margin-bottom: 35px;
   }

@@ -1,4 +1,5 @@
 @use "style" as *;
+@use "responsify" as *;
 
 nav {
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
@@ -19,13 +20,13 @@ nav {
 
 #nav-logo {
   transition: background-image 0.3s ease;
-  width: 133px;
-  height: 22px;
   background-image: url("/YourTour-light.svg");
   color: $cl-white;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  width: responsify(360, 1024, 133, 181.84, "px");
+  height: responsify(360, 1024, 22, 30.24, "px");
   @media only screen and (min-width: 1024px) {
     width:181.84px;
     height:30.24px;
@@ -48,11 +49,11 @@ nav {
 #nav-menu{
   display: flex;
   flex-direction: row;
-  width: 320px;
+  width: responsify(360, 1024, 320, 910, "px");
   justify-content: space-between;
   align-items: center;
   @media only screen and (min-width: 1024px) {
-    width: 910px;
+    width: responsify(1024, 1920, 910, 1168, "px");
   }
   @media only screen and (min-width: 1920px) {
     width: 1168px;
@@ -61,7 +62,7 @@ nav {
 #nav-links{
   display: none;
   flex-direction: row;
-  width: 408px;
+  width: responsify(1024, 1920, 408, 468, "px");
   justify-content: space-between;
   @media only screen and (min-width: 1024px) {
     display: flex;

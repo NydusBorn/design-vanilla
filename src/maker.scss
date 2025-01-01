@@ -1,19 +1,20 @@
 @use "style" as *;
+@use "responsify" as *;
 #maker-container{
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  width: 318px;
+  width: responsify(360, 1024, 318, 918, "px");
   @media only screen and (min-width: 1024px) {
-    width: 918px;
+    width: responsify(1024, 1920, 918, 1170, "px");
   }
   @media only screen and (min-width: 1920px) {
     width: 1170px;
   }
 }
 .maker-ad{
-  margin-bottom: 20px;
+  margin-bottom: responsify(360, 1024, 20, 30, "px");
   @media only screen and (min-width: 1024px) {
     margin-bottom: 30px;
   }
@@ -21,8 +22,8 @@
 .maker-p{
   color: $cl-gray-3;
   text-align: center;
-  width: 318px;
-  margin-bottom: 40px;
+  width: responsify(360, 1024, 318, 400, "px");
+  margin-bottom: responsify(360, 1024, 40, 100, "px");
   @media only screen and (min-width: 1024px) {
     width: 400px;
     margin-bottom: 100px;
@@ -37,12 +38,12 @@
   align-items: center;
   width: 100%;
   background-color: $cl-white;
-  border-radius: 30px;
-  padding: 20px 20px 40px 20px;
-  row-gap: 20px;
-  column-gap: 30px;
+  border-radius: responsify(360, 1024, 30, 50, "px");
+  padding: responsify(360, 1024, 20, 60, "px") responsify(360, 1024, 20, 60, "px") responsify(360, 1024, 40, 60, "px") responsify(360, 1024, 20, 60, "px");
+  row-gap: responsify(1024, 1920, 20, 30, "px");
+  column-gap: responsify(360, 1024, 30, 33, "px");
   @media only screen and (min-width: 1024px) {
-    padding: 60px;
+    padding: responsify(1024, 1920, 60, 70, "px");
     border-radius: 50px;
     column-gap: 33px;
   }
@@ -55,9 +56,9 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 278px;
+  width: responsify(360, 1024, 278, 382, "px");
   @media only screen and (min-width: 1024px) {
-    width: 382px;
+    width: responsify(1024, 1920, 382, 498, "px");
   }
   @media only screen and (min-width: 1920px) {
     width: 498px;
@@ -65,12 +66,12 @@
 }
 .maker-input{
   width: 100%;
-  height: 43px;
   background-color: $cl-beige-1;
   border-radius: 10px;
-  padding: 10px;
   box-sizing: border-box;
   border: 1px solid $cl-beige-2;
+  height: responsify(360, 1024, 43, 68, "px");
+  padding: responsify(360, 1024, 10, 20, "px");
   @media only screen and (min-width: 1024px) {
     height: 68px;
     padding: 20px;
@@ -95,7 +96,7 @@
   width: 100%;
 }
 #maker-com{
-  height: 132px;
+  height: responsify(360, 1024, 132, 152, "px");
   @media only screen and (min-width: 1024px) {
     height: 152px;
   }
@@ -111,7 +112,7 @@
   flex-direction: row;
   width: 100%;
   box-sizing: border-box;
-  gap: 10px;
+  gap: responsify(360, 1024, 10, 30, "px");
   @media only screen and (min-width: 1024px) {
     gap: 30px;
   }
@@ -128,7 +129,7 @@ option:enabled{
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 15px;
-  padding-right: 20px;
+  padding-right: responsify(360, 1024, 20, 30, "px");
   @media only screen and (min-width: 1024px) {
     padding-right: 30px;
   }
@@ -141,7 +142,7 @@ fieldset{
 .radio-container{
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: responsify(360, 1024, 30, 31, "px");
   @media only screen and (min-width: 1024px) {
     gap: 31px;
   }
@@ -149,8 +150,8 @@ fieldset{
 .radio-item{
   display: flex;
   flex-direction: row;
-  gap: 10px;
   align-items: center;
+  gap: responsify(360, 1024, 10, 11, "px");
   @media only screen and (min-width: 1024px) {
     gap: 11px;
   }
@@ -167,9 +168,9 @@ input[type="radio"] {
   cursor: pointer;
   background-color: transparent;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  border: 1.5px solid $cl-black;
+  border: responsify(360, 1024, 1.5, 2, "px") solid $cl-black;
+  width: responsify(360, 1024, 20, 26, "px");
+  height: responsify(360, 1024, 20, 26, "px");
   @media only screen and (min-width: 1024px) {
     border: 2px solid $cl-black;
     width: 26px;
@@ -181,8 +182,8 @@ input[type="radio"]:checked {
   &::before {
     content: "";
     display: block;
-    width: 9.23px;
-    height: 9.23px;
+    width: responsify(360, 1024, 9.23, 12, "px");
+    height: responsify(360, 1024, 9.23, 12, "px");
     border-radius: 50%;
     background-color: $cl-black;
     @media only screen and (min-width: 1024px) {
@@ -194,7 +195,7 @@ input[type="radio"]:checked {
 .maker-check-container{
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: responsify(360, 1024, 10, 11, "px");
   width: 100%;
   box-sizing: border-box;
   align-items: center;
@@ -211,10 +212,10 @@ input[type="checkbox"] {
   align-items: center;
   cursor: pointer;
   background-color: transparent;
-  border-radius: 4px;
-  width: 20px;
-  height: 20px;
-  border: 1.5px solid $cl-black;
+  border-radius: responsify(360, 1024, 4, 5, "px");
+  width: responsify(360, 1024, 20, 26, "px");
+  height: responsify(360, 1024, 20, 26, "px");
+  border: responsify(360, 1024, 1.5, 2, "px") solid $cl-black;
   @media only screen and (min-width: 1024px) {
     border-radius: 5px;
     border: 2px solid $cl-black;
@@ -227,8 +228,8 @@ input[type="checkbox"]:checked {
   &::before {
     content: "";
     display: block;
-    width: 9.23px;
-    height: 9.23px;
+    width: responsify(360, 1024, 9.23, 12, "px");
+    height: responsify(360, 1024, 9.23, 12, "px");
     background-image: url("/checkmark.svg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -268,8 +269,8 @@ input[type="checkbox"]:checked {
   }
 }
 .maker-bt{
-  width: 134px;
-  height: 47px;
+  width: responsify(360, 1024, 134, 235, "px");
+  height: responsify(360, 1024, 47, 58, "px");
   @media only screen and (min-width: 1024px) {
     width: 235px;
     height: 58px;

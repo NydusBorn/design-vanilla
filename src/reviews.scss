@@ -1,12 +1,13 @@
 @use "style" as *;
+@use "responsify" as *;
 #reviews-container{
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  width: 318px;
+  width: responsify(360, 1024, 318, 918, "px");
   @media only screen and (min-width: 1024px) {
-    width: 918px;
+    width: responsify(1024, 1920, 918, 1170, "px");
   }
   @media only screen and (min-width: 1920px) {
     width: 1170px;
@@ -14,16 +15,16 @@
 }
 #reviews-ad{
   text-align: center;
-  width: 318px;
+  width: responsify(360, 1024, 318, 529, "px");
   @media only screen and (min-width: 1024px) {
     width: 529px;
   }
 }
 #reviews-p{
   text-align: center;
-  width: 318px;
+  width: responsify(360, 1024, 318, 400, "px");
   color: $cl-gray-3;
-  margin-top: 20px;
+  margin-top: responsify(360, 1024, 20, 30, "px");
   @media only screen and (min-width: 1024px) {
     width: 400px;
     margin-top: 30px;
@@ -35,8 +36,8 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 18px;
-  margin-top: 50px;
+  gap: responsify(360, 1024, 18, 30, "px");
+  margin-top: responsify(360, 1024, 50, 100, "px");
   @media only screen and (min-width: 1024px) {
     margin-top: 100px;
     gap: 30px;
@@ -49,13 +50,13 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  border-radius: 20px;
-  padding: 20px;
-  width: 318px;
+  border-radius: responsify(360, 1024, 20, 50, "px");
+  padding: responsify(360, 1024, 20, 40, "px");
+  width: responsify(360, 1024, 318, 444, "px");
   height: max-content;
   @media only screen and (min-width: 1024px) {
-    width: 444px;
-    height: 841px;
+    width: responsify(1024, 1920, 444, 570, "px");
+    height: responsify(1024, 1920, 841, 673, "px");
     border-radius: 50px;
     padding: 40px;
   }
@@ -65,7 +66,7 @@
   }
 }
 .reviews-author{
-  height: 115px;
+  height: responsify(360, 1024, 115, 145, "px");
   width: 100%;
   margin-top: auto;
   display: flex;

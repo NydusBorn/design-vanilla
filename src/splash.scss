@@ -1,4 +1,5 @@
 @use "style" as *;
+@use "responsify" as *;
 .splash{
   position: absolute;
   width: 100%;
@@ -12,7 +13,7 @@
 .splash-ad{
   margin-top: 88px;
   height: calc(100vh - 88px);
-  gap: 40px;
+  gap: responsify(320, 1024, 40, 50, "px");
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -21,7 +22,8 @@
   text-align: center;
   width: 310px;
   @media only screen and (min-width: 1024px) {
-    gap: 50px
+    gap: 50px;
+    width: responsify(1024, 1920, 310, 914, "px");
   }
   @media only screen and (min-width: 1024px) {
     width: 914px;
@@ -29,17 +31,16 @@
 
 }
 #splash-t1{
-  margin-top: 52px;
+  margin-top: responsify(360, 1024, 52, 119, "px");
   @media only screen and (min-width: 1024px) {
     margin-top: 119px;
   }
 }
 #splash-t2{
-  width: 310px;
+  width: responsify(360, 1024, 310, 442, "px");
   @media only screen and (min-width: 1024px) {
-    width: 442px;
+    width: responsify(1024, 1920, 442, 562, "px");
   }
-
   @media only screen and (min-width: 1920px) {
     width: 562px;
   }

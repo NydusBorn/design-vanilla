@@ -1,4 +1,5 @@
 @use "style" as *;
+@use "responsify" as *;
 #adventures-container{
   display: flex;
   flex-direction: column;
@@ -11,9 +12,9 @@
 }
 #adventures-p{
   text-align: center;
-  width: 318px;
+  width: responsify(360, 1024, 318, 400, "px");
   color: $cl-gray-3;
-  margin-top: 20px;
+  margin-top: responsify(360, 1024, 20, 30, "px");
   @media only screen and (min-width: 1024px) {
     width: 400px;
     margin-top: 30px;
@@ -21,26 +22,31 @@
 }
 #adventures-cards{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-content: center;
-  margin-top: 50px;
-  row-gap: 18px;
-  width: 318px;
+  margin-top: responsify(360, 1024, 50, 100, "px");
+  row-gap: responsify(360, 1024, 18, 31, "px");
+  width: responsify(360, 1024, 318, 984, "px");
   @media only screen and (min-width: 1024px) {
-    row-gap: 31px;
+    row-gap: responsify(1024, 1920, 31, 30, "px");
     margin-top: 100px;
-    width: 984px;
+    width: responsify(1024, 1920, 984, 1860, "px");
   }
   @media only screen and (min-width: 1920px) {
     row-gap: 30px;
     width: 1860px;
   }
 }
+.adventures-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .adventures-card{
-  height: 110px;
-  border-radius: 20px;
+  height: responsify(360, 1024, 110, 300, "px");
+  border-radius: responsify(360, 1024, 20, 50, "px");
   background-size: cover;
   background-position: center;
   @media only screen and (min-width: 1024px) {
@@ -49,18 +55,18 @@
   }
 }
 .adventures-card-odd-row{
-  width: 150px;
+  width: responsify(360, 1024, 150, 314.67, "px");
   @media only screen and (min-width: 1024px) {
-    width: 314.67px;
+    width: responsify(1024, 1920, 314.67, 443, "px");
   }
   @media only screen and (min-width: 1920px) {
     width: 443px;
   }
 }
 .adventures-card-even-row{
-  width: 99.33px;
+  width: responsify(360, 1024, 99.33, 231, "px");
   @media only screen and (min-width: 1024px) {
-    width: 231px;
+    width: responsify(1024, 1920, 231, 348.87, "px");
   }
   @media only screen and (min-width: 1920px) {
     width: 348.87px;

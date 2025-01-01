@@ -1,7 +1,8 @@
 @use "style" as *;
+@use "responsify" as *;
 footer{
     width: 100%;
-    height: 95px;
+    height: responsify(360, 1024, 95, 88, "px");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,13 +15,13 @@ footer{
 
 #footer-menu{
     display: flex;
-    width: 317px;
+    width: responsify(360, 1024, 317, 918, "px");
     height: 53px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     @media only screen and (min-width: 1024px) {
-        width: 918px;
+        width: responsify(1024, 1920, 918, 1168, "px");
         flex-direction: row;
     }
     @media only screen and (min-width: 1920px) {
@@ -33,7 +34,7 @@ footer{
 #footer-links{
     display: flex;
     flex-direction: row;
-    width: 308px;
+    width: responsify(360, 1024, 308, 408, "px");
     justify-content: space-between;
     align-items: center;
     @media only screen and (min-width: 1024px) {
@@ -43,7 +44,7 @@ footer{
 .footer-lc{
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: responsify(360, 1024, 5, 10, "px");
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -64,8 +65,8 @@ footer{
     }
 }
 .footer-logo{
-    width: 21px;
-    height: 21px;
+    width: responsify(360, 1024, 21, 26, "px");
+    height: responsify(360, 1024, 21, 26, "px");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
