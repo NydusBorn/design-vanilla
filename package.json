@@ -10,9 +10,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "typescript": "^5.7.3",
-    "vite": "^6.0.11",
+    "@types/inputmask": "^5.0.7",
+    "inputmask": "latest",
     "sass-embedded": "^1.83.4",
-    "inputmask": "latest"
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11"
   }
 }
