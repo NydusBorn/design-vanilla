@@ -116,6 +116,13 @@ $ff-roboto: "Roboto", Serif;
   transition: all 0.2s ease-in-out;
 }
 
+.anchor{
+  height: 0;
+  width: 0;
+  position: absolute;
+  margin-top: -100px;
+}
+
 //general
 html{
   scroll-behavior: smooth;

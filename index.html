@@ -26,10 +26,10 @@
         <div id="nav-menu">
             <a id="nav-logo" href="#start"></a>
             <div id="nav-links">
-                <a class="p-med nav-link" href="#chooser-container">Туры</a>
-                <a class="p-med nav-link" href="#maker-container">Создать тур</a>
-                <a class="p-med nav-link" href="#reviews-container">Отзывы</a>
-                <a class="p-med nav-link" href="#stories-container">Истории</a>
+                <a class="p-med nav-link" href="#chooser-anchor">Туры</a>
+                <a class="p-med nav-link" href="#maker-anchor">Создать тур</a>
+                <a class="p-med nav-link" href="#reviews-anchor">Отзывы</a>
+                <a class="p-med nav-link" href="#stories-anchor">Истории</a>
             </div>
             <a id="phone-number" class="p-med nav-link" href="tel:+7 999 999 99 99">+7 999 999 99 99</a>
         </div>
@@ -44,7 +44,8 @@
             <button class="mat-button bt-small p-sm" id="splash-bt">Найти тур</button>
         </div>
         <div id="chooser-container">
-            <span class="t-h2 chooser-ad">Выбери свой тур</span>
+            <div class="anchor" id="chooser-anchor"></div>
+            <span class="t-h2 chooser-ad" id="chooser-ad">Выбери свой тур</span>
             <div id="tabs">
                 <span class="p-big tab" active>Популярные</span>
                 <span class="p-big tab">Авторские</span>
@@ -104,6 +105,7 @@
             </div>
         </div>
         <div id="maker-container">
+            <div class="anchor" id="maker-anchor"></div>
             <span class="t-h2 maker-ad">Собери свой тур</span>
             <span class="p-med maker-p">Идейные соображения высшего порядка, а также рамки и место обучения кадров</span>
             <form class="maker-form">
@@ -126,16 +128,16 @@
                 <div class="maker-field">
                     <label class="p-med" for="maker-phone">Телефон</label>
                     <input id="maker-phone" required class="maker-input p-med" type="tel" placeholder="+ 7 (___) ___-__-__"
-                           pattern="^\+?[0-9\s\-]{7,15}$"
+                           pattern="^\+?[0-9\s\-\ ]{7,15}$"
                            title="+7 (000) 000-00-00"/>
                 </div>
                 <div class="maker-field">
                     <label class="p-med" for="maker-from">Дата от</label>
-                    <input id="maker-from" required class="maker-input p-med" type="date" placeholder="ДД.ММ.ГГГГ"/>
+                    <input id="maker-from" required class="maker-input p-med" type="date" placeholder="ДД.ММ.ГГГГ" max="9999-12-31"/>
                 </div>
                 <div class="maker-field">
                     <label class="p-med" for="maker-to">Дата до</label>
-                    <input id="maker-to" required class="maker-input p-med" type="date" placeholder="ДД.ММ.ГГГГ"/>
+                    <input id="maker-to" required class="maker-input p-med" type="date" placeholder="ДД.ММ.ГГГГ" max="9999-12-31"/>
                 </div>
                 <div class="maker-line-field">
                     <label class="p-med" for="maker-com">Комментарий</label>
@@ -164,6 +166,7 @@
             </form>
         </div>
         <div id="reviews-container">
+            <div class="anchor" id="reviews-anchor"></div>
             <span class="t-h2" id="reviews-ad">Отзывы наших путешественников</span>
             <span class="p-med" id="reviews-p">Идейные соображения высшего порядка, а также рамки и место обучения кадров</span>
             <div id="reviews-cards">
@@ -216,6 +219,7 @@
             </div>
         </div>
         <div id="stories-container">
+            <div class="anchor" id="stories-anchor"></div>
             <span class="t-h2" id="stories-ad">Истории путешествий</span>
             <span class="p-med" id="stories-p">Идейные соображения высшего порядка, а также рамки и место обучения кадров</span>
             <div class="stories-cards">

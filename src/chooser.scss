@@ -63,6 +63,9 @@
   width: responsify(360, 1024, 318, 450, "px");
   height: responsify(360, 1024, 318, 531, "px");
   border-radius: responsify(360, 1024, 20, 50, "px");
+  &:hover{
+    cursor: pointer;
+  }
   @media only screen and (min-width: 1024px) {
     width: responsify(1024, 1920, 450, 370, "px");
     height: 531px;

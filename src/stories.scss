@@ -46,6 +46,9 @@
   border-radius: responsify(360, 1024, 20, 50, "px");
   height: responsify(360, 1024, 455, 567, "px");
   overflow: clip;
+  &:hover{
+    cursor: pointer;
+  }
   @media only screen and (min-width: 1024px) {
     border-radius: 50px;
     height: 567px;
@@ -119,7 +122,7 @@
   margin-left: 15px;
   content: url("/arrow-white.svg");
 }
-.stories-bt:hover{
+.stories-card:hover .stories-bt{
   @media only screen and (min-width: 1024px) {
     cursor: pointer;
     background-color: $cl-green-4;
