@@ -14,7 +14,7 @@ window.addEventListener("scroll", () => {
 let mask_phone = new Inputmask("+ 7 (999) 999-99-99");
 mask_phone.mask(document.getElementById("maker-phone")!);
 
-let date_ins = document.querySelectorAll('input[type="date"]')
+let date_ins: NodeListOf<HTMLDataElement> = document.querySelectorAll('input[type="date"]')
 for (const dateIn of date_ins) {
     dateIn.addEventListener("change", () => {
         if (dateIn.value === "") {
