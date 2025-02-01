@@ -160,6 +160,9 @@ fieldset{
 input{
   margin: 0;
 }
+input[type="date"]{
+  color: $cl-gray-3;
+}
 input[type="radio"] {
   appearance: none;
   display: flex;

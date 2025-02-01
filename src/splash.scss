@@ -16,7 +16,7 @@
   gap: responsify(320, 1024, 40, 50, "px");
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   color: $cl-white;
   text-align: center;
@@ -31,10 +31,7 @@
 
 }
 #splash-t1{
-  margin-top: responsify(360, 1024, 52, 119, "px");
-  @media only screen and (min-width: 1024px) {
-    margin-top: 119px;
-  }
+
 }
 #splash-t2{
   width: responsify(360, 1024, 310, 442, "px");

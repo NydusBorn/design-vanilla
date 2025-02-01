@@ -11,5 +11,23 @@ window.addEventListener("scroll", () => {
     }
 });
 
-let mask_phone = new Inputmask("+7 (999) 999-99-99");
+let mask_phone = new Inputmask("+ 7 (999) 999-99-99");
 mask_phone.mask(document.getElementById("maker-phone")!);
+
+let date_ins = document.querySelectorAll('input[type="date"]')
+for (const dateIn of date_ins) {
+    dateIn.addEventListener("change", () => {
+        if (dateIn.value === "") {
+            dateIn.style.color = ""
+        }
+        else{
+            dateIn.style.color = "black"
+        }
+    })
+}
+
+let form = document.querySelector(".maker-form")!;
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+})
