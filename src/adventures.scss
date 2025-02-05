@@ -41,8 +41,26 @@
 .adventures-row{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+}
+.adventures-row-odd{
+  column-gap: responsify(360, 1024, 18, 20, "px");
+  @media only screen and (min-width: 1024px) {
+    column-gap: responsify(1024, 1920, 20, 30, "px");
+  }
+  @media only screen and (min-width: 1920px) {
+    column-gap: 30px;
+  }
+}
+.adventures-row-even{
+  column-gap: responsify(360, 1024, 10, 20, "px");
+  @media only screen and (min-width: 1024px) {
+    column-gap: responsify(1024, 1920, 20, 30, "px");
+  }
+  @media only screen and (min-width: 1920px) {
+    column-gap: 30px;
+  }
 }
 .adventures-card{
   height: responsify(360, 1024, 110, 300, "px");
@@ -55,18 +73,18 @@
   }
 }
 .adventures-card-odd-row{
-  width: responsify(360, 1024, 150, 314.67, "px");
+  width: responsify(360, 1024, 150, 260, "px");
   @media only screen and (min-width: 1024px) {
-    width: responsify(1024, 1920, 314.67, 443, "px");
+    width: responsify(1024, 1920, 314.67, 380, "px");
   }
   @media only screen and (min-width: 1920px) {
     width: 443px;
   }
 }
 .adventures-card-even-row{
-  width: responsify(360, 1024, 99.33, 231, "px");
+  width: responsify(360, 1024, 99.33, 180, "px");
   @media only screen and (min-width: 1024px) {
-    width: responsify(1024, 1920, 231, 348.87, "px");
+    width: responsify(1024, 1920, 231, 280, "px");
   }
   @media only screen and (min-width: 1920px) {
     width: 348.87px;
