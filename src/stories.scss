@@ -128,7 +128,7 @@
     background-color: $cl-green-4;
   }
 }
-.stories-bt:active{
+.stories-card:active .stories-bt:active{
   @media only screen and (min-width: 1024px) {
     background-color: $cl-orange-2;
   }
