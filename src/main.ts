@@ -31,3 +31,9 @@ let form = document.querySelector(".maker-form")!;
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 })
+
+form.addEventListener("reset", () => {
+    for (const dateIn of date_ins) {
+        dateIn.style.color = ""
+    }
+})
