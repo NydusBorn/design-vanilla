@@ -14,26 +14,12 @@ window.addEventListener("scroll", () => {
 let mask_phone = new Inputmask("+ 7 (999) 999-99-99");
 mask_phone.mask(document.getElementById("maker-phone")!);
 
-let date_ins: NodeListOf<HTMLDataElement> = document.querySelectorAll('input[type="date"]')
-for (const dateIn of date_ins) {
-    dateIn.addEventListener("change", () => {
-        if (dateIn.value === "") {
-            dateIn.style.color = ""
-        }
-        else{
-            dateIn.style.color = "black"
-        }
-    })
-}
+let date_mask = new Inputmask("datetime", {inputFormat: "dd.mm.yyyy"});
+date_mask.mask(document.getElementById("maker-from")!);
+date_mask.mask(document.getElementById("maker-to")!);
 
 let form = document.querySelector(".maker-form")!;
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-})
-
-form.addEventListener("reset", () => {
-    for (const dateIn of date_ins) {
-        dateIn.style.color = ""
-    }
 })
