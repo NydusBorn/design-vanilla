@@ -14,7 +14,7 @@ window.addEventListener("scroll", () => {
 let mask_phone = new Inputmask("+ 7 (999) 999-99-99");
 mask_phone.mask(document.getElementById("maker-phone")!);
 
-let date_mask = new Inputmask("datetime", {inputFormat: "dd.mm.yyyy"});
+let date_mask = new Inputmask("datetime", {inputFormat: "dd.mm.yyyy", placeholder: "ДД.ММ.ГГГГ", jitMasking: true});
 date_mask.mask(document.getElementById("maker-from")!);
 date_mask.mask(document.getElementById("maker-to")!);
 
